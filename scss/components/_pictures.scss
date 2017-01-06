@@ -1,0 +1,30 @@
+#gallery { 
+  width: 100%;
+  list-style: none;
+  padding-right: 20px;
+  padding-left: 20px;
+  
+  @media #{$brk-narrow} {
+    padding: 0;
+    margin: 0;
+    width:100%;
+    margin-bottom: 10px;
+    li {
+     float: left;
+     width: 45%;
+     margin: 2.5%;
+      }
+    li p {
+     padding-left: 5px;
+     padding-right: 5px;
+      }
+    }
+  @media #{$brk-wide} {
+    li {
+      width: 28.3333%;
+      }
+    li:nth-child(4n) {
+        clear: left;
+      }
+    }
+}

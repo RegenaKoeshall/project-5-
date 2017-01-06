@@ -1,0 +1,40 @@
+.name,
+.main-nav {
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  @include text (1.25em, $weight: bolder);
+  margin: 0;
+  align-self: center;
+  @media #{$brk-wide} {
+  margin-right: auto;
+  }
+}
+.main-nav {
+  margin-right: 40px;
+  @media  #{$brk-narrow} {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  @media  #{$brk-wide} {
+    margin-top: 0;
+    align-self: center; 
+  }
+}
+.main-nav li {
+   @extend %centered;
+  display: block;
+  list-style: none;
+  background: $white;
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+   @media #{$brk-narrow} {
+   background-color: $transparent;
+  }
+  @media #{$brk-wide} {
+    margin-left: .65em;
+    margin-right: .65em;
+  }
+}

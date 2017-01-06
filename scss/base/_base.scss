@@ -1,0 +1,56 @@
+/*****Base Styles*****/
+
+* {
+  box-sizing: border-box;
+}
+body {
+  @include text(1.25em, 1.6, $color: $gray );
+  margin: 0;
+  font-family: $stack-sans-serif;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  @media #{$brk-narrow} {
+  &.profile-image {
+    float: right;
+    width: 50%; 
+    padding: 10px;
+    margin-bottom: 5px;
+    }
+  }
+}
+h2 {
+  font-size: .85em;
+  padding-top: 20px;
+}
+
+/*****Navagation Styles*****/
+a {
+  &:link {
+    color: $black;
+  }
+  &:hover {
+    color: $green;
+  }
+  &:visited {
+    color: $blue;
+  }
+}
+.wrapper {
+  background-color: $background-cream; 
+  
+  @media #{$brk-narrow} {
+    min-height: calc(100vh - 89px);
+  }
+  @media #{$brk-wide} {
+    align-content: center;
+  }
+}
+
+
+
+

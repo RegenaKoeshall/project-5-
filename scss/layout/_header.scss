@@ -1,0 +1,8 @@
+.main-header {
+  margin-top: 20px;
+  
+  @media #{$brk-narrow} {
+    height: 125px;
+    justify-content: flex-end;
+    }
+}

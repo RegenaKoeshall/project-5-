@@ -1,0 +1,32 @@
+.foot {
+   p {
+     @extend %footer;
+    }
+   a {
+    @extend %footer;
+    }
+   li {
+    @extend %footer;
+    color: $transparent;
+    }
+  
+  @media #{$brk-narrow} {
+    a {
+      color: $transparent;
+    }
+    p {
+      float: left;
+      margin-left: 30px;
+    }
+    li {
+      float: right;
+      color: inherit;
+      margin-bottom: 20px;
+    }
+    ul {
+      margin: 0;
+    }
+  }
+}
+
+

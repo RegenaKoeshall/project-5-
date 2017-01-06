@@ -1,0 +1,28 @@
+//Center text
+
+%centered {
+   text-align: center;
+}
+
+//container margin
+%container-margin {
+ margin: 10px;
+}
+
+//footer
+
+%footer {
+   display: inline;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+//Clearfix
+
+%clearfix {
+  &:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+}

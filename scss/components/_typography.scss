@@ -1,0 +1,7 @@
+.title {
+  @include text (1.25em, $weight: bold)
+}
+.bold {
+  @include text (inherit, $weight: bold, $l-margin: 20px);
+  padding-right: 20px;
+}
